@@ -22,6 +22,7 @@
         "ngrx",
         "sonarjs",
         "etc",
+        "unicorn",
         "prettier"
       ],
       "rules": {
@@ -229,7 +230,8 @@
         ],
         "space-before-function-paren": "off",
         "space-in-parens": ["off", "never"],
-        "sonarjs/no-collapsible-if": "warn"
+        "sonarjs/no-collapsible-if": "warn",
+        "unicorn/prefer-switch": "warn"
       }
     },
     {

@@ -21,13 +21,11 @@
 
     Outside:
       - ban                                                       <- https://github.com/remithomas/eslint-plugin-ban
-      - no-commented-out-code                                     <- https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-commented-out-code.md
-      - no-unnecessary-callback-wrapper                           <- eslint rule doesn't exist, can cause problems sometimes? maybe remove.
       - no-var-before-return                                      <- cant find an eslint rule.
-      - prefer-switch                                             <- https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-switch.md
       - project-structure                                         <- cant find a rule but it HAS to exist
 
     Need further work:
+      - no-commented-out-code                                     <- https://github.com/cartant/eslint-plugin-etc/blob/main/docs/rules/no-commented-out-code.md
       - ish-no-object-literal-type-assertion                      <- HOW TO DISABLE RULE FOR TESTS ONLY ? https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md disable for tests
       - sort-ngmodule-metadata-arrays                             <- whats up with forRoot function calls etc?
       - no-static-this                                            <- build fixer for this? would have to make custom rule. https://github.com/typescript-eslint/typescript-eslint/issues/2271#issuecomment-653858188
@@ -39,6 +37,8 @@
       - no-collapsible-if                                         <- NO AUTOFIX; IS OK? - license not for copying - https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-collapsible-if.md
 
     Need Decisions:
+      - no-unnecessary-callback-wrapper                           <- eslint rule doesn't exist, can cause problems sometimes? maybe remove.
+      - prefer-switch                                             <- https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-switch.md
       - "@angular-eslint/no-output-native": "off",                <- seems useful but not enforced right now                                                          ! (maybe) on but carefully
       - @typescript-eslint/ban-types                              <- extending defaults seems useful and good but causes lots of problems right now                   ! maybe, 60 changes
       - new stuff from ngrx                                       <- https://github.com/timdeschryver/eslint-plugin-ngrx
