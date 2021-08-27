@@ -17,14 +17,9 @@ templates
 
 # synchronize-marker:dist-scripts:begin
 /dist
-!/dist/build-ecosystem.js
 !/dist/entrypoint.sh
 !/dist/healthcheck.js
-!/dist/prometheus.js
 !/dist/robots.txt
 !/dist/server.crt
-!/dist/server.js
 !/dist/server.key
-!/dist/readinessprobe.js
-!/dist/livenessprobe.js
 # synchronize-marker:dist-scripts:end
