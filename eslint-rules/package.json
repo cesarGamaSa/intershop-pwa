@@ -1,6 +1,6 @@
 {
-  "name": "eslint-plugin-custom-rules",
-  "description": "A plugin with custom eslint rules",
+  "name": "eslint-plugin-ish-custom-rules",
+  "description": "A plugin with Intershop's custom eslint rules",
   "version": "0.0.1",
   "main": "dist/index.js",
   "files": [

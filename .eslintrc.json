@@ -18,7 +18,7 @@
         "eslint-plugin-rxjs",
         "eslint-plugin-rxjs-angular",
         "eslint-plugin-no-null",
-        "custom-rules",
+        "ish-custom-rules",
         "jest",
         "ngrx",
         "sonarjs",
@@ -137,7 +137,8 @@
         "arrow-body-style": ["error", "as-needed"],
         "arrow-parens": ["error", "as-needed"],
         "comma-dangle": "off",
-        "custom-rules/no-return-undefined": "error",
+        "ish-custom-rules/no-return-undefined": "error",
+        "ish-custom-rules/no-assignment-to-inputs": "error",
         // disabled in favor of @typescript-eslint/dot-notation
         "dot-notation": "off",
         "id-blacklist": [

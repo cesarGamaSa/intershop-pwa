@@ -1,18 +1,9 @@
-import {
-  AST_NODE_TYPES,
-  TSESLint,
-} from '@typescript-eslint/experimental-utils';
-import {
-  RuleContext,
-  RuleListener,
-} from '@typescript-eslint/experimental-utils/dist/ts-eslint';
+import { AST_NODE_TYPES, TSESLint } from '@typescript-eslint/experimental-utils';
+import { RuleContext, RuleListener } from '@typescript-eslint/experimental-utils/dist/ts-eslint';
 
 export const noReturnUndefinedRule: {
   meta: TSESLint.RuleMetaData<'undefinedError'>;
-  create: (
-    context: RuleContext<'undefinedError', []>,
-    optionsWithDefault: []
-  ) => RuleListener;
+  create: (context: RuleContext<'undefinedError', []>, optionsWithDefault: []) => RuleListener;
 } = {
   meta: {
     messages: {
@@ -22,18 +13,13 @@ export const noReturnUndefinedRule: {
     type: 'problem',
     schema: [],
   },
-  create: (context) => ({
+  create: context => ({
     ReturnStatement(node) {
-      if (
-        node.argument?.type === AST_NODE_TYPES.Identifier &&
-        node.argument.name === 'undefined'
-      ) {
+      if (node.argument?.type === AST_NODE_TYPES.Identifier && node.argument.name === 'undefined') {
         context.report({
           node,
           messageId: 'undefinedError',
-          fix: (fixer) => {
-            return fixer.remove(node.argument);
-          },
+          fix: fixer => fixer.remove(node.argument),
         });
       }
     },

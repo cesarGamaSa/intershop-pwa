@@ -12,7 +12,6 @@
       - component-creation-test                                   <- custom rule
       - do-not-use-then-with-testbed-in-tests                     <- custom rule
       - initialize-observables-in-ngoninit                        <- custom rule
-      - no-assignment-to-inputs                                   <- custom rule
       - no-intelligence-in-artifacts                              <- custom rule
       - no-suspicious-variable-init-in-tests                      <- custom rule
       - use-async-synchronization-in-tests                        <- custom rule
@@ -30,7 +29,6 @@
       - sort-ngmodule-metadata-arrays                             <- whats up with forRoot function calls etc?
       - no-static-this                                            <- build fixer for this? would have to make custom rule. https://github.com/typescript-eslint/typescript-eslint/issues/2271#issuecomment-653858188
       - no-unused                                                 <- double check if no-unused-expression actually fixes all this https://eslint.org/docs/rules/no-unused-vars
-      - no-return-undefined                                       <- KEEP OLD BEHAVIOR - consistent return does not do the exact same, either adapt or own rule https://eslint.org/docs/rules/consistent-return
       - prefer-method-signature                                   <- TRY AND UNDERSTAND , LEAVE AS IT IS - recommended and typesafe way vs what we currently do: https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md
       - ish-ordered-imports                                       <- OWN RULE TO RECREATE EARLIER BEHAVIOR - vanilla rules aren't the same, either eslint standard or simple import sort or custom rule https://eslint.org/docs/rules/sort-imports or https://github.com/lydell/eslint-plugin-simple-import-sort
       - @eslint-plugin-jest/no-restricted-matchers                <- IMPLEMENT - to make sure tsmockito is used https://github.com/jest-community/eslint-plugin-jest/blob/HEAD/docs/rules/no-restricted-matchers.md
@@ -44,6 +42,8 @@
       - new stuff from ngrx                                       <- https://github.com/timdeschryver/eslint-plugin-ngrx
 
     Done:
+      - no-assignment-to-inputs                                   <- custom rule
+      - no-return-undefined                                       <- KEEP OLD BEHAVIOR - consistent return does not do the exact same, either adapt or own rule https://eslint.org/docs/rules/consistent-return
       - @typescript-eslint/ban-tslint-comment                     <- useful for after migration in projects
       - @typescript-eslint/no-var-requires                        <- shouldn't use this with typescript, maybe default already https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-var-requires.md
       - ngrx-use-empty-store-type                                 <- should be this: https://github.com/timdeschryver/eslint-plugin-ngrx/blob/main/docs/rules/no-typed-global-store.md
